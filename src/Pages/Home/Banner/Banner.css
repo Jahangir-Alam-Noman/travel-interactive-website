@@ -1,0 +1,21 @@
+.banner{
+    height:610px;
+    width: 100%;
+    padding-top: 230px;
+    color: white;
+    background:
+
+            linear-gradient(
+                    rgba(18, 18, 18, 0.45),
+                    rgba(18, 18, 18, 0.75)
+            ),
+
+            url("../../../images/banner-7.jpg") fixed;
+
+}
+.banner_vacation{
+    font-size: 60px;
+}
+.banner_travel{
+    color: #fc9d1f;
+}

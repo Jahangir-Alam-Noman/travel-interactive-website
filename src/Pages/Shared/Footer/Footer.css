@@ -1,0 +1,27 @@
+.bg_color{
+    background-color: #1e1e1e;
+    color: #fffcfa;
+    font-weight: 400;
+    
+}
+.footer_icon .fa{
+    margin: 10px;
+    color: white;
+    font-size: 25px;
+}
+.footer_icon .fa:hover{
+    color:#83b53c;
+}
+.explore h3{
+  color: #fc9d1f;
+}
+.explore a {
+    text-decoration: none;
+   color: #fffcfa;
+}
+.explore a:hover{
+    color:#83b53c;
+    margin-left: 10px;
+    transition: 1s linear;
+}
+
