@@ -6,7 +6,7 @@ import './Offer.css';
 const Offer = ({ service }) => {
     const { name, img, description, _id } = service;
     return (
-        <div className="service text-center">
+        <div className="service text-start">
             <Col>
                 <Card >
                     <Card.Img variant="top" src={img} />
@@ -16,7 +16,7 @@ const Offer = ({ service }) => {
                             {description.slice(0, 130)}
                         </Card.Text>
                         <Link to={`/service/${_id}`}>
-                            <button type="button" className="btn btn-outline-info">More Details</button>
+                            <button type="button" className="btn btn-outline-warning">Book Now</button>
                         </Link>
                     </Card.Body>
                 </Card>

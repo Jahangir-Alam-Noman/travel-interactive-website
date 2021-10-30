@@ -20,7 +20,7 @@ const About = () => {
                                 <h2 className="card-title">
                                     We Are Travel Experts</h2>
                                 <p className="card-text">Our advisors have access to our unparalleled relationships with the world’s top luxury hotels, tours and cruise lines, who offer upgrades and travel experiences that are only available when you work with one of our “best of the best” in the industry. Whether you are longing to relax on one of the world’s top beaches, or seeking the travel adventure of a lifetime, working with one of Travel Experts’ independent travel advisors will give you the opportunity to experience the world in ways you previously thought were unimaginable.Your luxury travel advisor will guide you through the exciting planning phase of your adventure.</p>
-                                <Link to="/about"><button type="button" className="btn btn-warning text-white">Learn More</button></Link>
+                                <Link to="/about"><button type="button" className="btn btn-dark text-white">Learn More</button></Link>
 
                             </div>
                         </div>

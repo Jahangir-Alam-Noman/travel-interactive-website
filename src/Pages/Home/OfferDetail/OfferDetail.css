@@ -1,0 +1,23 @@
+
+.overlay {
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url("../../../images/banner3.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* height: 200px; */
+    color: #ffffff;
+    background-size: cover;
+    padding-top: 160px;
+    padding-bottom: 150px;
+    overflow-y: hidden;
+}
+.overlay a{
+    text-decoration: none;
+    border-right: 2px solid #2dc0ba;
+    margin: 10px;
+}
+.text-custom{
+    color: #c2c2e6;
+}
+.details_headline{
+    color: #2dc0ba;
+}

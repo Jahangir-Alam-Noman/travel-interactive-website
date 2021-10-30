@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import logo from '../../../images/log_2.png';
 import './Header.css';
@@ -18,22 +18,43 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mx-auto anchor">
 
-                            <Link to="/home">Home</Link>
-                            <Link to="/doctors">My Package</Link>
-                            <Link to="/about">Manage All Packages</Link>
-                            <Link to="/services">Add A New Service</Link>
-                            <Link to="/about">About Us</Link>
+                            {user.displayName ?
+                                <div>
+                                    <Link to="/home">Home</Link>
+                                    <Link to="/doctors">My Package</Link>
+                                    <Link to="/about">Manage All Packages</Link>
+                                    <Link to="/services">Add A New Service</Link>
+                                    <Link to="/about">About Us</Link>
+                                </div>
+                                :
+                                <div>
+                                    <Link to="/home">Home</Link>
+                                    <Link to="/about">About Us</Link>
+                                </div>
+                            }
 
                         </Nav>
-                        <Nav>
+
+                        <Nav className="">
                             <Nav.Link className="text-white" href="#deets">{user.displayName}</Nav.Link>
                             {user.displayName ?
-                                <button onClick={logOut} type="button" class="btn btn-outline-warning">Log out</button>
+                                <button onClick={logOut} type="button" class="btn btn-outline-success">Log out</button>
+
                                 :
                                 <Link className="text-white" eventKey={2} to="/login">
                                     <button type="button" className="btn btn-outline-success">Login</button>
                                 </Link>
                             }
+
+                            {/* 
+                            {user.displayName && <span style={{ color: 'white' }}>Hello {user.displayName}</span>}
+                            {
+
+                                user.displayName ?
+                                    <button onClick={logOut}>Log Out</button>
+                                    :
+                                    <NavLink to="/login">Login</NavLink>
+                            } */}
 
 
                         </Nav>

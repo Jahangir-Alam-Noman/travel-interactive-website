@@ -5,7 +5,7 @@ import './NotFound.css';
 const NotFound = () => {
     return (
         <div>
-            <div className=" bg-dark text-light not_found mt-5">
+            <div className=" bg-light text-dark not_found mt-5">
                 <div>
                     <h1>4 <span><i className="fa fa-frown-o" aria-hidden="true"></i></span>  4</h1>
                     <h3>Oops! Page not found!</h3>
