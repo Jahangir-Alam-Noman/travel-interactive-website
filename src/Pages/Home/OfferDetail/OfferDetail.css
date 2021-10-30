@@ -1,6 +1,6 @@
 
 .overlay {
-    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url("../../../images/banner3.jpg");
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url("../../../images/banner-6.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     /* height: 200px; */
@@ -20,4 +20,22 @@
 }
 .details_headline{
     color: #2dc0ba;
+}
+
+
+
+.book_package{
+    /* padding-top: 150px; */
+    /* padding-bottom: 150px; */
+}
+.book_package form{
+     display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center; 
+}
+.book_package form input, .description{
+    width: 80%;
+    margin-bottom: 15px;
+    padding: 10px;
 }
