@@ -7,6 +7,8 @@ import Home from './Pages/Home/Home/Home';
 import OfferDetail from './Pages/Home/OfferDetail/OfferDetail';
 import Login from './Pages/Login/Login/Login';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import ManageBooked from './Pages/ManageBooked/ManageBooked';
+import MyBooked from './Pages/MyBooked/MyBooked';
 import NotFound from './Pages/NotFound/NotFound';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
@@ -25,6 +27,17 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
+
+            <Route path="/bookedPackage">
+              <MyBooked></MyBooked>
+            </Route>
+
+            <Route path="/manageBooked">
+              <ManageBooked></ManageBooked>
+            </Route>
+
+
+
 
             <PrivateRoute path="/service/:serviceId">
               <OfferDetail></OfferDetail>

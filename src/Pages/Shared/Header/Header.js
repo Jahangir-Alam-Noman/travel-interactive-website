@@ -21,8 +21,8 @@ const Header = () => {
                             {user.displayName ?
                                 <div>
                                     <Link to="/home">Home</Link>
-                                    <Link to="/doctors">My Package</Link>
-                                    <Link to="/about">Manage Packages</Link>
+                                    <Link to="/bookedPackage">My Booked Package</Link>
+                                    <Link to="/manageBooked">Manage Booked</Link>
                                     <Link to="/addPackage">Add Package</Link>
                                     <Link to="/about">About Us</Link>
                                 </div>

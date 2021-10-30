@@ -6,10 +6,12 @@ import './Offers.css';
 const Offers = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/packages')
+        fetch('https://young-bastion-08130.herokuapp.com/packages')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
+
+
     return (
         <div>
             <div className="services container pt-5 mt-4">

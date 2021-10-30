@@ -5,10 +5,10 @@ import { useForm } from "react-hook-form";
 import './AddPackage.css';
 
 const AddPackage = () => {
-    const { register, handleSubmit, reset } = useForm();
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
         // console.log(data);
-        axios.post('http://localhost:5000/packages', data)
+        axios.post('https://young-bastion-08130.herokuapp.com/packages', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Successfully Added');
@@ -26,6 +26,7 @@ const AddPackage = () => {
                 <input type="number" {...register("price")} placeholder="price" />
                 <input {...register("img")} placeholder="image url" />
                 {/* <input type="submit" /> */}
+                {errors.name && <span className="text-danger">Your name maximum 20 letters</span>}
                 <input className="btn btn-primary" type="submit" value="Submit" />
 
             </form>

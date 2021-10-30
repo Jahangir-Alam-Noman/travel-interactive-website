@@ -13,7 +13,7 @@ const OfferDetail = () => {
 
     const [details, setDetails] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/packages/${serviceId}`)
+        fetch(`https://young-bastion-08130.herokuapp.com/packages/${serviceId}`)
             .then(res => res.json())
             .then(data => setDetails(data))
     }, [])
@@ -22,7 +22,7 @@ const OfferDetail = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
         // console.log(data);
-        axios.post(`http://localhost:5000/packages/${serviceId}`, data)
+        axios.post(`https://young-bastion-08130.herokuapp.com/packages/${serviceId}`, data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Successfully Booked');
@@ -44,18 +44,20 @@ const OfferDetail = () => {
                     <h2 className="details_headline">{details?.name}</h2>
                     <h5 className="text-warning fw-bolder">Price : $ {details?.price}</h5>
                     <p className="text-start"> {details?.description} .</p>
+
                 </div>
                 <div className="col-12  col-md-6   col-lg-6">
                     <div className="book_package">
-                        <h2 className="pb-5 pt-3">Package Booking</h2>
+                        <h2 className="pb-5">Package Booking</h2>
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <input defaultValue={user.displayName} {...register("name", { required: true, maxLength: 20 })}
                             />
                             <input defaultValue={user?.email}  {...register("email")} placeholder="Email" />
                             <textarea {...register("address", { required: true })} className="description" placeholder="Address" /> <br />
-                            <input defaultValue={details?.name}  {...register("package")} placeholder="booking Package" />
-                            {/* <input defaultValue={details.name} {...register("packageName")} /> */}
-                            {/* <input defaultValue={details.name}  {...register("bookedPackage")} /> */}
+
+
+                            <input defaultValue={details?.name}  {...register("package")} placeholder="Package name" />
+
                             {errors.address && <span className="text-danger">This field is required</span>}
 
                             <input className="btn btn-primary" type="submit" value="Place Booking" />
