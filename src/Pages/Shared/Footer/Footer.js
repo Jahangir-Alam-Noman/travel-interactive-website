@@ -25,7 +25,7 @@ const Footer = () => {
                             <h3 className="pb-3">Latest News</h3>
                             <p> <NavLink to="/home">Home</NavLink></p>
                             <p> <NavLink to="/about">About</NavLink></p>
-                            <p> <NavLink to="/offers">Offers</NavLink></p>
+                            <p> <NavLink to="/packages">Offers</NavLink></p>
                             <p> <NavLink to="/about">Departments</NavLink></p>
                             <p> <NavLink to="/home">Home</NavLink></p>
                         </div>
@@ -34,7 +34,7 @@ const Footer = () => {
                         <div className="explore text-start px-5">
                             <h3 className="pb-3">Follow Us</h3>
                             <p> <NavLink to="/home">Blog</NavLink></p>
-                            <p> <NavLink to="/about">Appointment</NavLink></p>
+                            <p> <NavLink to="/login">Appointment</NavLink></p>
                             <p> <NavLink to="/login">Register</NavLink></p>
                             <p> <NavLink to="/login">Login</NavLink></p>
                             <p> <NavLink to="/login">Support</NavLink></p>
@@ -45,8 +45,8 @@ const Footer = () => {
                     <div className="col-12 col-md-6 col-lg-3 ">
                         <div className="explore text-start px-5">
                             <h3 className="pb-3">Support</h3>
-                            <p> <NavLink to="/about">Online Support</NavLink></p>
-                            <p> <NavLink to="/about">Free Consultancy</NavLink></p>
+                            <p> <NavLink to="/login">Online Support</NavLink></p>
+                            <p> <NavLink to="/login">Free Consultancy</NavLink></p>
                             <p> <NavLink to="/home">24/7 Service</NavLink></p>
                             <p> <NavLink to="/about">Make call</NavLink></p>
                             <p> <NavLink to="/about">Contact Support</NavLink></p>

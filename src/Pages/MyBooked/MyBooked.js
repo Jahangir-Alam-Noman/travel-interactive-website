@@ -6,9 +6,8 @@ import './MyBooked.css';
 const MyBooked = () => {
     const [load, setLoad] = useState(false);
     const { user, isLoading } = useAuth();
-    const email = "jahangir2km@gmail.com";
-    // console.log(user);
-
+    const email = user.email;
+    // const email = "jahangir2km@gmail.com";
 
     const [myBooked, setMyBooked] = useState([]);
     useEffect(() => {

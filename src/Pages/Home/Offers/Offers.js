@@ -18,7 +18,7 @@ const Offers = () => {
     }
 
     return (
-        <div>
+        <div className="pt-4">
             <div className="services container pt-5 mt-4">
                 <h2 className="fw-bolder pt-2 pb-2">Offers</h2>
                 <h4 className="text-dark  pb-5">What Package We Offer</h4>

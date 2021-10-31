@@ -29,6 +29,7 @@ const Header = () => {
                                 :
                                 <div>
                                     <Link to="/home">Home</Link>
+                                    <Link to="/packages">Packages</Link>
                                     <Link to="/about">About Us</Link>
                                 </div>
                             }
@@ -45,16 +46,6 @@ const Header = () => {
                                     <button type="button" className="btn btn-outline-success">Login</button>
                                 </Link>
                             }
-
-                            {/* 
-                            {user.displayName && <span style={{ color: 'white' }}>Hello {user.displayName}</span>}
-                            {
-
-                                user.displayName ?
-                                    <button onClick={logOut}>Log Out</button>
-                                    :
-                                    <NavLink to="/login">Login</NavLink>
-                            } */}
 
 
                         </Nav>

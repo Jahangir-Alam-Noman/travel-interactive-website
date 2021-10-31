@@ -5,6 +5,7 @@ import About from './Pages/About/About';
 import AddPackage from './Pages/AddPackage/AddPackage';
 import Home from './Pages/Home/Home/Home';
 import OfferDetail from './Pages/Home/OfferDetail/OfferDetail';
+import Offers from './Pages/Home/Offers/Offers';
 import Login from './Pages/Login/Login/Login';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import ManageBooked from './Pages/ManageBooked/ManageBooked';
@@ -26,6 +27,9 @@ function App() {
             </Route>
             <Route path="/home">
               <Home></Home>
+            </Route>
+            <Route path="/packages">
+              <Offers></Offers>
             </Route>
 
             <Route path="/bookedPackage">

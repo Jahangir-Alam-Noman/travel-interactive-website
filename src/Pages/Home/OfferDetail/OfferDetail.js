@@ -49,16 +49,14 @@ const OfferDetail = () => {
                 </div>
                 <div className="col-12  col-md-6   col-lg-6">
                     <div className="book_package">
-                        <h2 className="pb-5">Booking Package</h2>
+                        <h2 className="pb-5 fw-bolder">Booking Package</h2>
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <input defaultValue={user.displayName} {...register("name", { required: true, maxLength: 20 })}
                             />
                             <input defaultValue={user?.email}  {...register("email")} placeholder="Email" />
                             <textarea {...register("address", { required: true })} className="description" placeholder="Address" /> <br />
 
-
                             <input defaultValue={details?.name}  {...register("package")} placeholder="Package name" />
-
                             {errors.address && <span className="text-danger">Address is required</span>}
 
                             <input className="btn btn-primary" type="submit" value="Place Booking" />
