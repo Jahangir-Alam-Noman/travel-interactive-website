@@ -36,14 +36,9 @@ function App() {
               <ManageBooked></ManageBooked>
             </Route>
 
-
-
-
             <PrivateRoute path="/service/:serviceId">
               <OfferDetail></OfferDetail>
             </PrivateRoute>
-
-
 
             <Route path="/about">
               <About></About>

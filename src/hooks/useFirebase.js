@@ -15,13 +15,6 @@ const useFirebase = () => {
         setIsLoading(true);
         const googleProvider = new GoogleAuthProvider();
         return signInWithPopup(auth, googleProvider);
-        // .then(result => {
-        //     console.log(result.user);
-        //     setUser(result.user);
-        // })
-        // .catch(error => {
-        //     setError(error.message);
-        // })
     }
 
     // firebase observer

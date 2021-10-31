@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Row } from 'react-bootstrap';
+import { Row, Spinner } from 'react-bootstrap';
+import useAuth from '../../../hooks/useAuth';
 import Offer from '../Offer/Offer';
 import './Offers.css';
 
@@ -11,6 +12,10 @@ const Offers = () => {
             .then(data => setServices(data))
     }, [])
 
+    const { isLoading } = useAuth();
+    if (isLoading) {
+        return <Spinner animation="border" variant="light" />;
+    }
 
     return (
         <div>
