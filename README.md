@@ -8,12 +8,12 @@ In the project directory, you can run:
 
 ●	Overview
 
-   ▪	User can add/remove packages and also be able to update order status.
+     ▪	User can add/remove packages and also be able to update order status.
 
-   ▪	Implemented firebase for client/admin sign in method with google.
+     ▪	Implemented firebase for client/admin sign in method with google.
 
-   ▪	User can order and check  his/her packages  and also able to remove.
+     ▪	User can order and check  his/her packages  and also able to remove.
    
-   ▪	By this website admin  can  and also manage booking.
+     ▪	By this website admin  can  and also manage booking.
 
 ●	Technologies used : React,Firebase, React Router, Node,Express, MongoDB.
