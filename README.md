@@ -14,6 +14,6 @@ In the project directory, you can run:
 
      ▪	User can order and check  his/her packages  and also able to remove.
    
-     ▪	By this website user  can  and also manage booking.
+     ▪	By this website user  can also manage booking.
 
 ●	Technologies used : React,Firebase, React Router, Node,Express, MongoDB.
